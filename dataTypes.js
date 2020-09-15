@@ -56,6 +56,9 @@ class UserHandler {
         if (hasUserWithCurrentDetails){
             this.allConnectedUsers.add(userName);
         }
+        else{
+            throw "The username or password not correct"
+        }
     }
 
     isUserExistInSystem(userName){
